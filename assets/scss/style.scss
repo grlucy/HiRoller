@@ -1,1 +1,14 @@
 // Variables ------------------
+$light-gray: #ddd;
+
+// Styles ------------------
+
+header {
+  background-color: $light-gray;
+  padding: 10px;
+  font-family: "Fredoka One", cursive;
+
+  h1 {
+    margin: 0;
+  }
+}

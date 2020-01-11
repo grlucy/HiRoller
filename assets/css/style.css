@@ -1,1 +1,10 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+header {
+  background-color: #ddd;
+  padding: 10px;
+  font-family: "Fredoka One", cursive;
+}
+
+header h1 {
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */
