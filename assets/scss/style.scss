@@ -1,13 +1,13 @@
 // Variables ------------------
-$light-gray: #ccc;
+$light-gray: #bbb;
 $font-gray: #555;
 $accent-border: 1px solid $light-gray;
-$aqua: #08f7fe;
-$mint: #09fbd3;
-$pink: #fe53bb;
-$goldenrod: #f5d300;
-$amethyst: rgb(145, 82, 197);
-$orange: rgb(255, 170, 59);
+$green: #00575a;
+$blue: #00437a;
+$magenta: #790048;
+$goldenrod: #c59100;
+$amethyst: rgb(89, 46, 124);
+$orange: rgb(156, 63, 0);
 
 // Styles ------------------
 
@@ -43,7 +43,12 @@ section {
 
 .divFlex {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+}
+.divFlexCol {
+  display: flex;
+  flex-direction: column;
 }
 
 h6 {
@@ -92,4 +97,25 @@ h6 {
   border-bottom: $accent-border;
   border-right: $accent-border;
   border-radius: 0 5px 5px 0;
+}
+
+.dice {
+  box-sizing: border-box;
+  padding: 0 7px;
+  height: 35px;
+  width: 35px;
+  margin: 0 0 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.dice4 {
+  background-color: $green;
+}
+
+.sum {
+  margin: 0 0 0 20px;
 }
