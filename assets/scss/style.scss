@@ -1,14 +1,34 @@
 // Variables ------------------
-$light-gray: #ddd;
+$light-gray: #ccc;
+$font-gray: #555;
 
 // Styles ------------------
 
+body {
+  color: $font-gray;
+}
+
 header {
   background-color: $light-gray;
-  padding: 10px;
+  padding: 15px;
   font-family: "Fredoka One", cursive;
 
+  .row {
+    margin: 0;
+  }
+
   h1 {
+    margin: 0;
+    font-size: 35px;
+    color: #fff;
+  }
+}
+
+section {
+  .container {
+    margin: 20px auto;
+  }
+  .collapsible-header h5 {
     margin: 0;
   }
 }

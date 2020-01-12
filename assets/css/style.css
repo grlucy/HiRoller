@@ -1,10 +1,28 @@
+body {
+  color: #555;
+}
+
 header {
-  background-color: #ddd;
-  padding: 10px;
+  background-color: #ccc;
+  padding: 15px;
   font-family: "Fredoka One", cursive;
 }
 
+header .row {
+  margin: 0;
+}
+
 header h1 {
+  margin: 0;
+  font-size: 35px;
+  color: #fff;
+}
+
+section .container {
+  margin: 20px auto;
+}
+
+section .collapsible-header h5 {
   margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

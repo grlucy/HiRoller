@@ -12,13 +12,16 @@
     />
     <!--Font Awesome Icons-->
     <script src="https://kit.fontawesome.com/51e99565ca.js"></script>
-    <!--Bootstrap-->
+    <!-------------------------->
+    <!--Materialize-->
+    <!-- Compiled and minified CSS -->
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-------------------------->
     <!--CSS-->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!--jQuery-->
@@ -31,8 +34,8 @@
   <body>
     <header>
       <div class="container">
-        <div class="row">
-          <div class="col text-center">
+        <div class="row center-align">
+          <div class="col s12">
             <h1><i class="fas fa-dice-d20"></i> HiRoller</h1>
           </div>
         </div>
@@ -40,12 +43,32 @@
     </header>
     <section>
       <div class="container">
-        <div class="row" id="input-header">
-          <div class="col">
-            <h4>How many dice?</h4>
+        <div class="row">
+          <div class="col s12">
+            <ul class="collapsible expandable">
+              <li class="active" id="input-header">
+                <div class="collapsible-header">
+                  <h5>How many dice?</h5>
+                </div>
+                <div class="collapsible-body">
+                  <span>Lorem ipsum dolor sit amet.</span>
+                </div>
+              </li>
+              <li id="output-header">
+                <div class="collapsible-header">
+                  <h5>Roll Results</h5>
+                </div>
+                <div class="collapsible-body">
+                  <span>Lorem ipsum dolor sit amet.</span>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
+    <!--JavaScript-->
+    <script src="./assets/javascript/collapse.js"></script>
+    <script src="./assets/javascript/dice.js"></script>
   </body>
 </html>

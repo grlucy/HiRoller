@@ -12,4 +12,4 @@ A responsive app that simulates rolling dice with various numbers of sides. User
 
 **Technologies Used:**
 
-> HTML, CSS, Bootstrap, Materialize, Sass, JavaScript, jQuery, Google Fonts, Font Awesome Icons
+> HTML, CSS, Materialize, Sass, JavaScript, jQuery, Google Fonts, Font Awesome Icons
