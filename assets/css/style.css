@@ -37,6 +37,7 @@ li .collapsible-header .caret {
   transition: -webkit-transform 0.4s ease;
   transition: transform 0.4s ease;
   transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+  margin-right: 0;
 }
 
 li.active .caret {
@@ -77,6 +78,24 @@ h6 {
 .inline-h6 {
   display: inline-block;
   width: 40px;
+}
+
+.btn {
+  margin: 25px 0 0;
+}
+
+.button-font {
+  font-family: "Fredoka One", cursive;
+  text-transform: none;
+  font-size: 1.25rem;
+}
+
+#rollBtn {
+  margin: 25px 10px 0 0;
+}
+
+#resetBtn {
+  background-color: #bbb;
 }
 
 .dice-number {

@@ -47,6 +47,7 @@ li {
 
     .caret {
       transition: transform 0.4s ease;
+      margin-right: 0;
     }
   }
   &.active {
@@ -77,6 +78,24 @@ h6 {
 .inline-h6 {
   display: inline-block;
   width: 40px;
+}
+
+.btn {
+  margin: 25px 0 0;
+}
+
+.button-font {
+  font-family: "Fredoka One", cursive;
+  text-transform: none;
+  font-size: 1.25rem;
+}
+
+#rollBtn {
+  margin: 25px 10px 0 0;
+}
+
+#resetBtn {
+  background-color: $light-gray;
 }
 
 .dice-number {
