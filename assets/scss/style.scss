@@ -37,8 +37,23 @@ section {
   }
 }
 
-.collapsible-header h5 {
-  margin: 0;
+li {
+  .collapsible-header {
+    justify-content: space-between;
+
+    h5 {
+      margin: 0;
+    }
+
+    .caret {
+      transition: transform 0.4s ease;
+    }
+  }
+  &.active {
+    .caret {
+      transform: rotate(-180deg);
+    }
+  }
 }
 
 .divFlex {
