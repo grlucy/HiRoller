@@ -1,6 +1,13 @@
 // Variables ------------------
 $light-gray: #ccc;
 $font-gray: #555;
+$accent-border: 1px solid $light-gray;
+$aqua: #08f7fe;
+$mint: #09fbd3;
+$pink: #fe53bb;
+$goldenrod: #f5d300;
+$amethyst: rgb(145, 82, 197);
+$orange: rgb(255, 170, 59);
 
 // Styles ------------------
 
@@ -28,7 +35,61 @@ section {
   .container {
     margin: 20px auto;
   }
-  .collapsible-header h5 {
-    margin: 0;
-  }
+}
+
+.collapsible-header h5 {
+  margin: 0;
+}
+
+.divFlex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h6 {
+  font-size: 1.4rem;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.inline-h6 {
+  display: inline-block;
+  width: 40px;
+}
+
+.dice-number {
+  padding: 0 7px;
+  border-top: $accent-border;
+  border-bottom: $accent-border;
+  margin: 0 -4px;
+  box-sizing: border-box;
+  height: 25px;
+  width: 54px;
+  text-align: center;
+}
+
+.minus-btn {
+  box-sizing: border-box;
+  margin: 0 0 0 10px;
+  padding: 0 8px;
+  height: 25px;
+  background-color: #eee;
+  border-top: $accent-border;
+  border-bottom: $accent-border;
+  border-left: $accent-border;
+  border-radius: 5px 0 0 5px;
+}
+
+.plus-btn {
+  box-sizing: border-box;
+  margin: 0 40px 0 0;
+  padding: 0 8px;
+  height: 25px;
+  background-color: #eee;
+  border-top: $accent-border;
+  border-bottom: $accent-border;
+  border-right: $accent-border;
+  border-radius: 0 5px 5px 0;
 }

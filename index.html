@@ -12,6 +12,12 @@
     />
     <!--Font Awesome Icons-->
     <script src="https://kit.fontawesome.com/51e99565ca.js"></script>
+    <!--jQuery-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
     <!-------------------------->
     <!--Materialize-->
     <!-- Compiled and minified CSS -->
@@ -24,18 +30,13 @@
     <!-------------------------->
     <!--CSS-->
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <!--jQuery-->
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.js"
-      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
     <header>
       <div class="container">
         <div class="row center-align">
           <div class="col s12">
+            <!--Logo-->
             <h1><i class="fas fa-dice-d20"></i> HiRoller</h1>
           </div>
         </div>
@@ -46,19 +47,100 @@
         <div class="row">
           <div class="col s12">
             <ul class="collapsible expandable">
-              <li class="active" id="input-header">
-                <div class="collapsible-header">
+              <li class="active">
+                <!--Input Header-->
+                <div class="collapsible-header" id="input-header">
                   <h5>How many dice?</h5>
                 </div>
-                <div class="collapsible-body">
-                  <span>Lorem ipsum dolor sit amet.</span>
+                <!--Input Body-->
+                <div class="collapsible-body" id="input-body">
+                  <div class="divFlex">
+                    <!--d4-->
+                    <div>
+                      <h6 class="inline-h6">d4</h6>
+                      <span class="inline minus-btn" id="minus4">
+                        -
+                      </span>
+                      <p class="dice-number inline" id="number4">0</p>
+                      <span class="inline plus-btn" id="plus4">
+                        +
+                      </span>
+                    </div>
+                    <!--d6-->
+                    <div>
+                      <span>
+                        <h6 class="inline-h6">d6</h6>
+                        <span class="inline minus-btn" id="minus6">
+                          -
+                        </span>
+                        <p class="dice-number inline" id="number6">0</p>
+                        <span class="inline plus-btn" id="plus6">
+                          +
+                        </span>
+                      </span>
+                    </div>
+                    <!--d8-->
+                    <div>
+                      <span>
+                        <h6 class="inline-h6">d8</h6>
+                        <span class="inline minus-btn" id="minus8">
+                          -
+                        </span>
+                        <p class="dice-number inline" id="number8">0</p>
+                        <span class="inline plus-btn" id="plus8">
+                          +
+                        </span>
+                      </span>
+                    </div>
+                    <!--d10-->
+                    <div>
+                      <span>
+                        <h6 class="inline-h6">d10</h6>
+                        <span class="inline minus-btn" id="minus10">
+                          -
+                        </span>
+                        <p class="dice-number inline" id="number10">0</p>
+                        <span class="inline plus-btn" id="plus10">
+                          +
+                        </span>
+                      </span>
+                    </div>
+                    <!--d12-->
+                    <div>
+                      <span>
+                        <h6 class="inline-h6">d12</h6>
+                        <span class="inline minus-btn" id="minus12">
+                          -
+                        </span>
+                        <p class="dice-number inline" id="number12">0</p>
+                        <span class="inline plus-btn" id="plus12">
+                          +
+                        </span>
+                      </span>
+                    </div>
+                    <!--d20-->
+                    <div>
+                      <span>
+                        <h6 class="inline-h6">d20</h6>
+                        <span class="inline minus-btn" id="minus20">
+                          -
+                        </span>
+                        <p class="dice-number inline" id="number20">0</p>
+                        <span class="inline plus-btn" id="plus20">
+                          +
+                        </span>
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </li>
-              <li id="output-header">
-                <div class="collapsible-header">
+              <li>
+                <!--Output Header-->
+                <div class="collapsible-header" id="output-header">
                   <h5>Roll Results</h5>
                 </div>
-                <div class="collapsible-body">
+                <!--Output Body-->
+                <div class="collapsible-body" id="output-body">
                   <span>Lorem ipsum dolor sit amet.</span>
                 </div>
               </li>
