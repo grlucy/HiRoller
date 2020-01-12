@@ -26,6 +26,9 @@ let d10Num = 0;
 let d12Num = 0;
 let d20Num = 0;
 
+// Results div
+const resultsDiv = $("#results-div");
+
 // Functions ------------------
 
 function getDiceNums() {
@@ -65,5 +68,19 @@ document.addEventListener("DOMContentLoaded", function() {
     d10El.text("0");
     d12El.text("0");
     d20El.text("0");
+  });
+
+  // Roll Button Click Event ------------------
+
+  rollBtn.on("click", event => {
+    resultsDiv.empty();
+    getDiceNums();
+    console.log(
+      `d4: ${d4Num}\nd6: ${d6Num}\nd8: ${d8Num}\nd10: ${d10Num}\nd12: ${d12Num}\nd20: ${d20Num}`
+    );
+    // Validation
+    if (d4Num + d6Num + d8Num + d10Num + d12Num + d20Num === 0) {
+      resultsDiv.append($(`<p>Error: Must roll at least 1 dice.</p>`));
+    }
   });
 });
