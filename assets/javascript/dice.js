@@ -26,7 +26,8 @@ let d10Num = 0;
 let d12Num = 0;
 let d20Num = 0;
 
-// Results div
+// Results
+const outputCollapsible = $("#output-collapsible");
 const resultsDiv = $("#results-div");
 
 // Functions ------------------
@@ -81,6 +82,11 @@ document.addEventListener("DOMContentLoaded", function() {
     // Validation
     if (d4Num + d6Num + d8Num + d10Num + d12Num + d20Num === 0) {
       resultsDiv.append($(`<p>Error: Must roll at least 1 dice.</p>`));
+    } else {
+      console.log("Success!");
     }
+    // Open results collapsible
+    $("li").addClass("active");
+    $(".collapsible-body").show();
   });
 });
