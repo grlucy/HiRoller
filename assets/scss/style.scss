@@ -80,10 +80,6 @@ h6 {
   width: 40px;
 }
 
-.btn {
-  margin: 25px 0 0;
-}
-
 .button-font {
   font-family: "Fredoka One", cursive;
   text-transform: none;
@@ -92,9 +88,11 @@ h6 {
 
 #rollBtn {
   margin: 25px 10px 0 0;
+  background-color: $green;
 }
 
 #resetBtn {
+  margin: 25px 0 0;
   background-color: $light-gray;
 }
 
@@ -119,6 +117,13 @@ h6 {
   border-bottom: $accent-border;
   border-left: $accent-border;
   border-radius: 5px 0 0 5px;
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
 }
 
 .plus-btn {
@@ -131,6 +136,13 @@ h6 {
   border-bottom: $accent-border;
   border-right: $accent-border;
   border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
 }
 
 .dice {
