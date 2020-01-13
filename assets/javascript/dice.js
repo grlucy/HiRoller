@@ -42,21 +42,22 @@ function getDiceNums() {
   d20Num = parseInt(d20El.text());
 }
 
-// Generate a specified # of random numbers and append to results div with dice styling
 function generateResults(num, max) {
+  // Append dice type header to results div
+  $(`.d${max}Div`).append($(`<h6 class="inline-h6">d${max}</h6>`));
+  // Generate a specified # of random numbers and append to results div with dice styling
   let newInlineDiv = $("<div>").addClass("inline");
   let newFlexDiv = $("<div>").addClass("divFlex diceFlex");
+  let diceSum = 0;
   for (let i = 1; i <= num; i++) {
     let randomNum = Math.floor(Math.random() * max + 1);
     newFlexDiv.append($(`<p class="dice dice${max}">${randomNum}</p>`));
+    diceSum += randomNum;
   }
   newInlineDiv.append(newFlexDiv);
   $(`.d${max}Div`).append(newInlineDiv);
-}
-
-function sum() {
-  // get sum of random dice
-  // can you remove id="sum#"?
+  // Append sum of dice random numbers to results div
+  $(`.d${max}Div`).append($(`<p class="inline sum">Total: ${diceSum}</p>`));
 }
 
 // Click Events ------------------
@@ -102,56 +103,32 @@ document.addEventListener("DOMContentLoaded", function() {
       if (d4Num) {
         let d4Div = $("<div>").addClass("d4Div bottom-divider");
         resultsDiv.append(d4Div);
-        $(".d4Div").append($(`<h6 class="inline-h6">d4</h6>`));
         generateResults(d4Num, 4);
-        $(".d4Div").append(
-          $(`<p class="inline sum" id="sum4">Total: 8888</p>`)
-        );
       }
       if (d6Num) {
         let d6Div = $("<div>").addClass("d6Div bottom-divider");
         resultsDiv.append(d6Div);
-        $(".d6Div").append($(`<h6 class="inline-h6">d6</h6>`));
         generateResults(d6Num, 6);
-        $(".d6Div").append(
-          $(`<p class="inline sum" id="sum6">Total: 8888</p>`)
-        );
       }
       if (d8Num) {
         let d8Div = $("<div>").addClass("d8Div bottom-divider");
         resultsDiv.append(d8Div);
-        $(".d8Div").append($(`<h6 class="inline-h6">d8</h6>`));
         generateResults(d8Num, 8);
-        $(".d8Div").append(
-          $(`<p class="inline sum" id="sum8">Total: 8888</p>`)
-        );
       }
       if (d10Num) {
         let d10Div = $("<div>").addClass("d10Div bottom-divider");
         resultsDiv.append(d10Div);
-        $(".d10Div").append($(`<h6 class="inline-h6">d10</h6>`));
         generateResults(d10Num, 10);
-        $(".d10Div").append(
-          $(`<p class="inline sum" id="sum10">Total: 8888</p>`)
-        );
       }
       if (d12Num) {
         let d12Div = $("<div>").addClass("d12Div bottom-divider");
         resultsDiv.append(d12Div);
-        $(".d12Div").append($(`<h6 class="inline-h6">d12</h6>`));
         generateResults(d12Num, 12);
-        $(".d12Div").append(
-          $(`<p class="inline sum" id="sum12">Total: 8888</p>`)
-        );
       }
       if (d20Num) {
         let d20Div = $("<div>").addClass("d20Div bottom-divider");
         resultsDiv.append(d20Div);
-        $(".d20Div").append($(`<h6 class="inline-h6">d20</h6>`));
         generateResults(d20Num, 20);
-        $(".d20Div").append(
-          $(`<p class="inline sum" id="sum20">Total: 8888</p>`)
-        );
       }
       // Remove border from last div
       $(".bottom-divider")

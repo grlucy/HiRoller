@@ -151,6 +151,7 @@ h6 {
   height: 35px;
   width: 35px;
   margin: 0 0 10px 10px;
+  border-radius: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,7 +160,7 @@ h6 {
 }
 
 .dice4 {
-  background-color: $green;
+  background-color: $orange;
 }
 .dice6 {
   background-color: $blue;
@@ -174,7 +175,7 @@ h6 {
   background-color: $amethyst;
 }
 .dice20 {
-  background-color: $orange;
+  background-color: $green;
 }
 
 .sum {

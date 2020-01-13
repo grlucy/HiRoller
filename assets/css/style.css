@@ -163,6 +163,7 @@ h6 {
   height: 35px;
   width: 35px;
   margin: 0 0 10px 10px;
+  border-radius: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,7 +178,7 @@ h6 {
 }
 
 .dice4 {
-  background-color: #00575a;
+  background-color: #9c3f00;
 }
 
 .dice6 {
@@ -197,7 +198,7 @@ h6 {
 }
 
 .dice20 {
-  background-color: #9c3f00;
+  background-color: #00575a;
 }
 
 .sum {
