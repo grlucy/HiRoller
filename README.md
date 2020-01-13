@@ -13,3 +13,7 @@ A responsive app that simulates rolling dice with various numbers of sides. User
 **Technologies Used:**
 
 > HTML, CSS, Materialize, Sass, JavaScript, jQuery, Google Fonts, Font Awesome Icons
+
+## Demo
+
+![HiRoller Demo](assets/screenshots/HiRoller-Demo.gif)
