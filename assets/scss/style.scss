@@ -161,7 +161,33 @@ h6 {
 .dice4 {
   background-color: $green;
 }
+.dice6 {
+  background-color: $blue;
+}
+.dice8 {
+  background-color: $magenta;
+}
+.dice10 {
+  background-color: $goldenrod;
+}
+.dice12 {
+  background-color: $amethyst;
+}
+.dice20 {
+  background-color: $orange;
+}
 
 .sum {
   margin: 0 0 0 20px;
+}
+
+.bottom-divider {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.no-bottom-divider {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }

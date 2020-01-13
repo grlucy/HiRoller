@@ -180,7 +180,39 @@ h6 {
   background-color: #00575a;
 }
 
+.dice6 {
+  background-color: #00437a;
+}
+
+.dice8 {
+  background-color: #790048;
+}
+
+.dice10 {
+  background-color: #c59100;
+}
+
+.dice12 {
+  background-color: #592e7c;
+}
+
+.dice20 {
+  background-color: #9c3f00;
+}
+
 .sum {
   margin: 0 0 0 20px;
+}
+
+.bottom-divider {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.no-bottom-divider {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
